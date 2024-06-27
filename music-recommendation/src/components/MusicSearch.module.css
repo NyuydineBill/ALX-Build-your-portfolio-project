@@ -1,0 +1,52 @@
+/* src/components/MusicSearch.module.css */
+
+.searchContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchForm {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchButton {
+    margin-left: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.trackList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trackItem {
+    margin-bottom: 8px;
+}

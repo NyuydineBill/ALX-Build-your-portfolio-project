@@ -1,0 +1,33 @@
+/* src/components/MusicUpload.module.css */
+
+.uploadContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.uploadForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadInput {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.uploadButton {
+    padding: 10px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: #005bb5;
+}
