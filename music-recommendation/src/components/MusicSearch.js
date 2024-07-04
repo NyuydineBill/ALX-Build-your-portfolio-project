@@ -1,6 +1,6 @@
 // src/components/MusicSearch.js
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { searchTracks } from "../services/spotifyService";
 import styles from "./MusicSearch.module.css";
 
@@ -9,6 +9,18 @@ const MusicSearch = () => {
   const [tracks, setTracks] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [accessToken, setAccessToken] = useState("");
+
+  useEffect(() => {
+    // Fetch or set access token here (e.g., from local storage)
+    const token = localStorage.getItem("spotifyAccessToken");
+    if (token) {
+      setAccessToken(token);
+    } else {
+      // Implement token retrieval (e.g., OAuth flow)
+      console.error("No access token available.");
+    }
+  }, []);
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -20,7 +32,7 @@ const MusicSearch = () => {
     try {
       setLoading(true);
       setError(null);
-      const results = await searchTracks(query);
+      const results = await searchTracks(query, accessToken);
       setTracks(results);
     } catch (error) {
       setError("Error fetching data. Please try again later.");
