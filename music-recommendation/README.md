@@ -84,11 +84,11 @@ Replace your_client_id_here and your_client_secret_here with your actual Spotify
 
 ### **Complete Example**
 
-Here's a complete example to get you started:
+Here's aa complete example to get you started:
 
 #### **`.env` File**
 
-```plaintext
+```plaintext 
 REACT_APP_SPOTIFY_CLIENT_ID=your_client_id_here
 REACT_APP_SPOTIFY_CLIENT_SECRET=your_client_secret_here
 
