@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  REACT_APP_SPOTIFY_CLIENT_ID = "b94bae83f1724fd3a8ac98b48ecc7b80"
+  REACT_APP_SPOTIFY_REDIRECT_URI = "https://melodymusicforus.netlify.app/callback"
+
+[functions]
+  directory = "netlify/functions"
