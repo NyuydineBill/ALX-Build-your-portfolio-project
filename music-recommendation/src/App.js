@@ -6,6 +6,7 @@ import MusicSearch from "./components/MusicSearch";
 import MusicUpload from "./components/MusicUpload";
 import Recommendations from "./components/Recommendations";
 import Navigation from "./components/Navigation";
+import Callback from "./components/Callback";
 import "./App.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
         <Navigation />
         <main className="mainContent">
           <Routes>
+            <Route path="/callback" element={<Callback />} />
             <Route path="/" element={<LandingPage />} />
             <Route path="/search" element={<MusicSearch />} />
             <Route path="/upload" element={<MusicUpload />} />

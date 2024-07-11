@@ -1,0 +1,23 @@
+/* src/components/Recommendations.css */
+
+.recommendations-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.recommendations-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.recommendations-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recommendations-container li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
