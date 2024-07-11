@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
-const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRE;
+const CLIENT_SECRET = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
 const AUTH_URL = "https://accounts.spotify.com/api/token";
 const BASE_URL = "https://api.spotify.com/v1";
 
