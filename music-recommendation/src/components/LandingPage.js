@@ -61,7 +61,7 @@ const LandingPage = () => {
             using React and integrating with third-party APIs.
           </p>
           <p>
-            The project started in [Start Date] and has evolved through
+            The project started in July 2024 and has evolved through
             iterative development, incorporating feedback and new ideas along
             the way. It's a part of the Holberton School's Portfolio Project
             series, demonstrating my skills and growth as a developer.
